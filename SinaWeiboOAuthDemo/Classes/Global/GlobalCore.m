@@ -53,7 +53,7 @@ CGRect ApplicationFrame(UIInterfaceOrientation interfaceOrientation) {
 time_t convertTimeStamp(NSString *stringTime) {
 	// Convert timestamp string to UNIX time
     //
-	time_t createdAt;
+	time_t createdAt = 0;
     struct tm created;
     time_t now;
     time(&now);

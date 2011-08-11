@@ -134,7 +134,7 @@
 	Draft *sentDraft = nil;
 	if (sender.context && [sender.context isKindOfClass:[Draft class]]) {
 		sentDraft = (Draft *)sender.context;
-		[sentDraft autorelease];
+//		[sentDraft autorelease];
 	}
 	
     if (sender.hasError) {

@@ -57,8 +57,8 @@
 		else {
 			source = src;
 		}
-		source = [source retain];
-		sourceUrl = [sourceUrl retain];
+		[source retain];
+		[sourceUrl retain];
 
 		favorited = [dic getBoolValueForKey:@"favorited" defaultValue:NO];
 		truncated = [dic getBoolValueForKey:@"truncated" defaultValue:NO];
