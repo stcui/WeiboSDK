@@ -8,10 +8,10 @@
 
 #import "ComposeViewController.h"
 
-@interface ComposeViewController (Private)
+
+@interface ComposeViewController ()
 
 - (void)postNewStatus;
-
 
 @end
 
@@ -138,6 +138,7 @@
 	}
 	
     if (sender.hasError) {
+        sendingView.hidden = YES;
         [sender alert];	
         return;
     }

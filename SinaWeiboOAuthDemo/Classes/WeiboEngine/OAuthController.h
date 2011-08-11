@@ -9,7 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "GlobalCore.h"
 
-@class OAuthEngine, OAuthController;
+
+@class OAuthEngine, OAuthController, OALoginView;
 
 @protocol OAuthControllerDelegate <NSObject>
 @optional
@@ -18,19 +19,17 @@
 - (void) OAuthControllerCanceled: (OAuthController *) controller;
 @end
 
-@interface OAuthController : UIViewController <UIWebViewDelegate> {
+@interface OAuthController : UIViewController <UITextFieldDelegate> {
 	
-	OAuthEngine						*_engine;
-	UIWebView									*_webView;
-	UINavigationBar								*_navBar;
+	OAuthEngine                   *_engine;
+    OALoginView                   *_loginView;
+	UINavigationBar *_navBar;
 	
-	id <OAuthControllerDelegate>			_delegate;
-	UIView										*_blockerView;
+	id <OAuthControllerDelegate>  _delegate;
+	UIView                        *_blockerView;
 	
-	UIInterfaceOrientation                      _orientation;
-	BOOL										_loading, _firstLoad;
-	UIToolbar									*_pinCopyPromptBar;
-	
+	UIInterfaceOrientation        _orientation;
+	BOOL                          _loading, _firstLoad;
 }
 
 @property (nonatomic, readwrite, retain) OAuthEngine *engine;

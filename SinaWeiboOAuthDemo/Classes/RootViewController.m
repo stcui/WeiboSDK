@@ -7,9 +7,10 @@
 //
 
 #import "RootViewController.h"
+#import "WeiboCell.h"
 
-#define kOAuthConsumerKey				@"3983859935"		//REPLACE ME
-#define kOAuthConsumerSecret			@"201fea7b1e1203a76a10f3be570f5abb"		//REPLACE ME
+#define kOAuthConsumerKey				@"3483371400"		//REPLACE ME
+#define kOAuthConsumerSecret			@"8b2b8e610f3ca2566693ad1097f19241"		//REPLACE ME
 
 @interface RootViewController (Private)
 
@@ -31,11 +32,10 @@
 	if (!statuses) {
 		statuses = [[NSMutableArray alloc] init];
 	}
-	
+	self.tableView.backgroundColor = [UIColor grayColor];
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-
-	
 }
 
 
@@ -183,23 +183,25 @@
     return statuses.count;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    Status *sts = [statuses objectAtIndex:indexPath.row];
+    NSLog(@"sts: %@ height: %g", sts, [WeiboCell cellHeightForObject:sts]);
+    return [WeiboCell cellHeightForObject:sts];
+}
 
 // Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     static NSString *CellIdentifier = @"Cell";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    WeiboCell *cell = (WeiboCell*)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle 
+        cell = [[[WeiboCell alloc] initWithStyle:UITableViewCellStyleSubtitle 
 									   reuseIdentifier:CellIdentifier] autorelease];
     }
 	
 	Status *sts = [statuses objectAtIndex:indexPath.row];
-    cell.textLabel.text = sts.user.screenName;
-	cell.detailTextLabel.text = sts.text;
-	// Configure the cell.
-
+    [cell setObject:sts];
     return cell;
 }
 
@@ -340,7 +342,6 @@
 	
 	if (controller) 
 		[self presentModalViewController: controller animated: YES];
-	
 }
 
 

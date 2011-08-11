@@ -172,7 +172,14 @@ const char *optimize_sql = "VACUUM; ANALYZE";
 
 + (void)alert
 {
-    //NSString *sqlite3err = [NSString stringWithUTF8String:sqlite3_errmsg(theDatabase)];
+    NSString *sqlite3err = [NSString stringWithUTF8String:sqlite3_errmsg(theDatabase)];
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"DB Error"
+                                                        message:sqlite3err
+                                                       delegate:nil
+                                              cancelButtonTitle:@"确认"
+                                              otherButtonTitles:nil];
+    [alertView show];
+    [alertView release];
 }
 
 @end

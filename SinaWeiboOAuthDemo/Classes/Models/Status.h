@@ -10,7 +10,7 @@
 #import <sqlite3.h>
 #import "NSDictionaryAdditions.h"
 #import "User.h"
-#import "RegexKitLite.h"
+
 
 @interface Status : NSObject {
     long long		statusId; //微博ID

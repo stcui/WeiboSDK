@@ -35,7 +35,8 @@
 
 - (id)initWithRequest:(OAMutableURLRequest *)aRequest delegate:(id)aDelegate didFinishSelector:(SEL)finishSelector didFailSelector:(SEL)failSelector
 {
-	if (self = [super init])
+    self = [super init];
+	if (self)
 	{
 		request = [aRequest retain];
 		delegate = aDelegate;

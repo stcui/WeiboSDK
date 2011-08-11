@@ -7,7 +7,7 @@
 //
 
 #import "Status.h"
-#import "RegexKitLite.h"
+
 
 @implementation Status
 @synthesize statusId, createdAt, text, source, sourceUrl, favorited, truncated, longitude, latitude, inReplyToStatusId;
@@ -17,7 +17,8 @@
 
 
 - (id)initWithStatement:(Statement *)stmt {
-	if (self = [super init]) {
+    self = [super init];
+	if (self) {
 		statusId = [stmt getInt64:0];
 		statusKey = [[NSNumber alloc]initWithLongLong:statusId];
 		createdAt = [stmt getInt32:1];
@@ -44,7 +45,8 @@
 }
 
 - (Status*)initWithJsonDictionary:(NSDictionary*)dic {
-	if (self = [super init]) {
+    self = [super init];
+	if (self) {
 		statusId = [dic getLongLongValueValueForKey:@"id" defaultValue:-1];
 		statusKey = [[NSNumber alloc]initWithLongLong:statusId];
 		createdAt = [dic getTimeValueForKey:@"created_at" defaultValue:0];
