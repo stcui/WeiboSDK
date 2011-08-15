@@ -1,7 +1,7 @@
 #import <UIKit/UIKit.h>
 #import "URLConnection.h"
 #import "Status.h"
-
+#import "OAuthController.h"
 
 typedef enum {
     WEIBO_REQUEST_TIMELINE,

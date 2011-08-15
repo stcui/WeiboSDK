@@ -1,0 +1,632 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A049207213F9091E0064DEE6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A049207113F9091E0064DEE6 /* Foundation.framework */; };
+		A049209713F909A10064DEE6 /* Comment.h in Headers */ = {isa = PBXBuildFile; fileRef = A049208613F909A10064DEE6 /* Comment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A049209813F909A10064DEE6 /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = A049208713F909A10064DEE6 /* Comment.m */; };
+		A049209913F909A10064DEE6 /* DBConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = A049208913F909A10064DEE6 /* DBConnection.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A049209A13F909A10064DEE6 /* DBConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = A049208A13F909A10064DEE6 /* DBConnection.m */; };
+		A049209B13F909A10064DEE6 /* Statement.h in Headers */ = {isa = PBXBuildFile; fileRef = A049208B13F909A10064DEE6 /* Statement.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A049209C13F909A10064DEE6 /* Statement.m in Sources */ = {isa = PBXBuildFile; fileRef = A049208C13F909A10064DEE6 /* Statement.m */; };
+		A049209D13F909A10064DEE6 /* DirectMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = A049208D13F909A10064DEE6 /* DirectMessage.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A049209E13F909A10064DEE6 /* DirectMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = A049208E13F909A10064DEE6 /* DirectMessage.m */; };
+		A049209F13F909A10064DEE6 /* Draft.h in Headers */ = {isa = PBXBuildFile; fileRef = A049208F13F909A10064DEE6 /* Draft.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A04920A013F909A10064DEE6 /* Draft.m in Sources */ = {isa = PBXBuildFile; fileRef = A049209013F909A10064DEE6 /* Draft.m */; };
+		A04920A113F909A10064DEE6 /* DummyGapStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = A049209113F909A10064DEE6 /* DummyGapStatus.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A04920A213F909A10064DEE6 /* DummyGapStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = A049209213F909A10064DEE6 /* DummyGapStatus.m */; };
+		A04920A313F909A10064DEE6 /* Status.h in Headers */ = {isa = PBXBuildFile; fileRef = A049209313F909A10064DEE6 /* Status.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A04920A413F909A10064DEE6 /* Status.m in Sources */ = {isa = PBXBuildFile; fileRef = A049209413F909A10064DEE6 /* Status.m */; };
+		A04920A513F909A10064DEE6 /* User.h in Headers */ = {isa = PBXBuildFile; fileRef = A049209513F909A10064DEE6 /* User.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A04920A613F909A10064DEE6 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = A049209613F909A10064DEE6 /* User.m */; };
+		A04920FD13F909EB0064DEE6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04920FC13F909EB0064DEE6 /* UIKit.framework */; };
+		A049211913F90A010064DEE6 /* NSDataAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = A049210113F90A010064DEE6 /* NSDataAdditions.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A049211A13F90A010064DEE6 /* NSDataAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A049210213F90A010064DEE6 /* NSDataAdditions.m */; };
+		A049211B13F90A010064DEE6 /* NSDictionaryAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = A049210313F90A010064DEE6 /* NSDictionaryAdditions.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A049211D13F90A010064DEE6 /* NSStringAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = A049210513F90A010064DEE6 /* NSStringAdditions.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A049214013F90A290064DEE6 /* GlobalCore.h in Headers */ = {isa = PBXBuildFile; fileRef = A049213013F90A290064DEE6 /* GlobalCore.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A049214113F90A290064DEE6 /* GlobalCore.m in Sources */ = {isa = PBXBuildFile; fileRef = A049213113F90A290064DEE6 /* GlobalCore.m */; };
+		A049214213F90A290064DEE6 /* ColorUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = A049213313F90A290064DEE6 /* ColorUtils.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A049214313F90A290064DEE6 /* ColorUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A049213413F90A290064DEE6 /* ColorUtils.m */; };
+		A049214413F90A290064DEE6 /* DebugUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = A049213513F90A290064DEE6 /* DebugUtils.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A049214513F90A290064DEE6 /* ImageUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = A049213613F90A290064DEE6 /* ImageUtils.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A049214613F90A290064DEE6 /* ImageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A049213713F90A290064DEE6 /* ImageUtils.m */; };
+		A049214713F90A290064DEE6 /* QuartzUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = A049213813F90A290064DEE6 /* QuartzUtils.c */; };
+		A049214813F90A290064DEE6 /* QuartzUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = A049213913F90A290064DEE6 /* QuartzUtils.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A049214913F90A290064DEE6 /* REString.h in Headers */ = {isa = PBXBuildFile; fileRef = A049213A13F90A290064DEE6 /* REString.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A049214A13F90A290064DEE6 /* REString.m in Sources */ = {isa = PBXBuildFile; fileRef = A049213B13F90A290064DEE6 /* REString.m */; };
+		A049214B13F90A290064DEE6 /* StringUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = A049213C13F90A290064DEE6 /* StringUtil.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A049214C13F90A290064DEE6 /* StringUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A049213D13F90A290064DEE6 /* StringUtil.m */; };
+		A049214D13F90A290064DEE6 /* TimeUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = A049213E13F90A290064DEE6 /* TimeUtils.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A049214E13F90A290064DEE6 /* TimeUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A049213F13F90A290064DEE6 /* TimeUtils.m */; };
+		A049215013F90A3A0064DEE6 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A049214F13F90A3A0064DEE6 /* Security.framework */; };
+		A049215413F90B070064DEE6 /* OALoginView.h in Headers */ = {isa = PBXBuildFile; fileRef = A049215213F90B070064DEE6 /* OALoginView.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A049215513F90B070064DEE6 /* OALoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = A049215313F90B070064DEE6 /* OALoginView.m */; };
+		A049218213F90BBB0064DEE6 /* Base64Transcoder.c in Sources */ = {isa = PBXBuildFile; fileRef = A049215913F90BBB0064DEE6 /* Base64Transcoder.c */; };
+		A049218313F90BBC0064DEE6 /* Base64Transcoder.h in Headers */ = {isa = PBXBuildFile; fileRef = A049215A13F90BBB0064DEE6 /* Base64Transcoder.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A049218413F90BBC0064DEE6 /* NSMutableURLRequest+Parameters.h in Headers */ = {isa = PBXBuildFile; fileRef = A049215B13F90BBB0064DEE6 /* NSMutableURLRequest+Parameters.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A049218513F90BBC0064DEE6 /* NSMutableURLRequest+Parameters.m in Sources */ = {isa = PBXBuildFile; fileRef = A049215C13F90BBB0064DEE6 /* NSMutableURLRequest+Parameters.m */; };
+		A049218613F90BBC0064DEE6 /* NSString+URLEncoding.h in Headers */ = {isa = PBXBuildFile; fileRef = A049215D13F90BBB0064DEE6 /* NSString+URLEncoding.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A049218713F90BBC0064DEE6 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = A049215E13F90BBB0064DEE6 /* NSString+URLEncoding.m */; };
+		A049218813F90BBC0064DEE6 /* NSURL+Base.h in Headers */ = {isa = PBXBuildFile; fileRef = A049215F13F90BBB0064DEE6 /* NSURL+Base.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A049218913F90BBC0064DEE6 /* NSURL+Base.m in Sources */ = {isa = PBXBuildFile; fileRef = A049216013F90BBB0064DEE6 /* NSURL+Base.m */; };
+		A049218A13F90BBC0064DEE6 /* OAAsynchronousDataFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = A049216113F90BBB0064DEE6 /* OAAsynchronousDataFetcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A049218B13F90BBC0064DEE6 /* OAAsynchronousDataFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = A049216213F90BBB0064DEE6 /* OAAsynchronousDataFetcher.m */; };
+		A049218C13F90BBC0064DEE6 /* OAConsumer.h in Headers */ = {isa = PBXBuildFile; fileRef = A049216313F90BBB0064DEE6 /* OAConsumer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A049218D13F90BBC0064DEE6 /* OAConsumer.m in Sources */ = {isa = PBXBuildFile; fileRef = A049216413F90BBB0064DEE6 /* OAConsumer.m */; };
+		A049218E13F90BBC0064DEE6 /* OADataFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = A049216513F90BBB0064DEE6 /* OADataFetcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A049218F13F90BBC0064DEE6 /* OADataFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = A049216613F90BBB0064DEE6 /* OADataFetcher.m */; };
+		A049219013F90BBC0064DEE6 /* OAHMAC_SHA1SignatureProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = A049216713F90BBB0064DEE6 /* OAHMAC_SHA1SignatureProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A049219113F90BBC0064DEE6 /* OAHMAC_SHA1SignatureProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = A049216813F90BBB0064DEE6 /* OAHMAC_SHA1SignatureProvider.m */; };
+		A049219213F90BBC0064DEE6 /* OAMutableURLRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = A049216913F90BBB0064DEE6 /* OAMutableURLRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A049219313F90BBC0064DEE6 /* OAMutableURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A049216A13F90BBB0064DEE6 /* OAMutableURLRequest.m */; };
+		A049219413F90BBC0064DEE6 /* OAPlaintextSignatureProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = A049216B13F90BBB0064DEE6 /* OAPlaintextSignatureProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A049219513F90BBC0064DEE6 /* OAPlaintextSignatureProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = A049216C13F90BBB0064DEE6 /* OAPlaintextSignatureProvider.m */; };
+		A049219613F90BBC0064DEE6 /* OARequestParameter.h in Headers */ = {isa = PBXBuildFile; fileRef = A049216D13F90BBB0064DEE6 /* OARequestParameter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A049219713F90BBC0064DEE6 /* OARequestParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = A049216E13F90BBB0064DEE6 /* OARequestParameter.m */; };
+		A049219813F90BBC0064DEE6 /* OAServiceTicket.h in Headers */ = {isa = PBXBuildFile; fileRef = A049216F13F90BBB0064DEE6 /* OAServiceTicket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A049219913F90BBC0064DEE6 /* OAServiceTicket.m in Sources */ = {isa = PBXBuildFile; fileRef = A049217013F90BBB0064DEE6 /* OAServiceTicket.m */; };
+		A049219A13F90BBC0064DEE6 /* OASignatureProviding.h in Headers */ = {isa = PBXBuildFile; fileRef = A049217113F90BBB0064DEE6 /* OASignatureProviding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A049219B13F90BBC0064DEE6 /* OAToken.h in Headers */ = {isa = PBXBuildFile; fileRef = A049217213F90BBB0064DEE6 /* OAToken.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A049219C13F90BBC0064DEE6 /* OAToken.m in Sources */ = {isa = PBXBuildFile; fileRef = A049217313F90BBB0064DEE6 /* OAToken.m */; };
+		A049219F13F90BBC0064DEE6 /* OAuthConsumer.h in Headers */ = {isa = PBXBuildFile; fileRef = A049217613F90BBB0064DEE6 /* OAuthConsumer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A04921A013F90BBC0064DEE6 /* OAuthEngine_Weibo.h in Headers */ = {isa = PBXBuildFile; fileRef = A049217713F90BBB0064DEE6 /* OAuthEngine_Weibo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A04921A113F90BBC0064DEE6 /* OAuthEngine_Weibo.m in Sources */ = {isa = PBXBuildFile; fileRef = A049217813F90BBB0064DEE6 /* OAuthEngine_Weibo.m */; };
+		A04921A213F90BBC0064DEE6 /* OAuthController.h in Headers */ = {isa = PBXBuildFile; fileRef = A049217913F90BBB0064DEE6 /* OAuthController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A04921A313F90BBC0064DEE6 /* OAuthController.m in Sources */ = {isa = PBXBuildFile; fileRef = A049217A13F90BBB0064DEE6 /* OAuthController.m */; };
+		A04921A413F90BBC0064DEE6 /* OAuthEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = A049217B13F90BBB0064DEE6 /* OAuthEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A04921A513F90BBC0064DEE6 /* OAuthEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = A049217C13F90BBB0064DEE6 /* OAuthEngine.m */; };
+		A04921A613F90BBC0064DEE6 /* URLConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = A049217D13F90BBB0064DEE6 /* URLConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A04921A713F90BBC0064DEE6 /* URLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = A049217E13F90BBB0064DEE6 /* URLConnection.m */; };
+		A04921A813F90BBC0064DEE6 /* WeiboClient.h in Headers */ = {isa = PBXBuildFile; fileRef = A049217F13F90BBB0064DEE6 /* WeiboClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A04921A913F90BBC0064DEE6 /* WeiboClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A049218013F90BBB0064DEE6 /* WeiboClient.m */; };
+		A04921D213F90C300064DEE6 /* JSONKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A04921D013F90C300064DEE6 /* JSONKit.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A04921D313F90C300064DEE6 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = A04921D113F90C300064DEE6 /* JSONKit.m */; };
+		A04921D813F90E4E0064DEE6 /* NSDictionaryAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A049210413F90A010064DEE6 /* NSDictionaryAdditions.m */; };
+		A04921D913F90E700064DEE6 /* NSStringAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A049210613F90A010064DEE6 /* NSStringAdditions.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A049206E13F9091E0064DEE6 /* libweibo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libweibo.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A049207113F9091E0064DEE6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A049207513F9091E0064DEE6 /* weibo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "weibo-Prefix.pch"; sourceTree = "<group>"; };
+		A049208613F909A10064DEE6 /* Comment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Comment.h; sourceTree = "<group>"; };
+		A049208713F909A10064DEE6 /* Comment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Comment.m; sourceTree = "<group>"; };
+		A049208913F909A10064DEE6 /* DBConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBConnection.h; sourceTree = "<group>"; };
+		A049208A13F909A10064DEE6 /* DBConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBConnection.m; sourceTree = "<group>"; };
+		A049208B13F909A10064DEE6 /* Statement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Statement.h; sourceTree = "<group>"; };
+		A049208C13F909A10064DEE6 /* Statement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Statement.m; sourceTree = "<group>"; };
+		A049208D13F909A10064DEE6 /* DirectMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectMessage.h; sourceTree = "<group>"; };
+		A049208E13F909A10064DEE6 /* DirectMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirectMessage.m; sourceTree = "<group>"; };
+		A049208F13F909A10064DEE6 /* Draft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Draft.h; sourceTree = "<group>"; };
+		A049209013F909A10064DEE6 /* Draft.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Draft.m; sourceTree = "<group>"; };
+		A049209113F909A10064DEE6 /* DummyGapStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DummyGapStatus.h; sourceTree = "<group>"; };
+		A049209213F909A10064DEE6 /* DummyGapStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DummyGapStatus.m; sourceTree = "<group>"; };
+		A049209313F909A10064DEE6 /* Status.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Status.h; sourceTree = "<group>"; };
+		A049209413F909A10064DEE6 /* Status.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Status.m; sourceTree = "<group>"; };
+		A049209513F909A10064DEE6 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		A049209613F909A10064DEE6 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		A04920FC13F909EB0064DEE6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A049210113F90A010064DEE6 /* NSDataAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDataAdditions.h; sourceTree = "<group>"; };
+		A049210213F90A010064DEE6 /* NSDataAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataAdditions.m; sourceTree = "<group>"; };
+		A049210313F90A010064DEE6 /* NSDictionaryAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDictionaryAdditions.h; sourceTree = "<group>"; };
+		A049210413F90A010064DEE6 /* NSDictionaryAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionaryAdditions.m; sourceTree = "<group>"; };
+		A049210513F90A010064DEE6 /* NSStringAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringAdditions.h; sourceTree = "<group>"; };
+		A049210613F90A010064DEE6 /* NSStringAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringAdditions.m; sourceTree = "<group>"; };
+		A049213013F90A290064DEE6 /* GlobalCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalCore.h; sourceTree = "<group>"; };
+		A049213113F90A290064DEE6 /* GlobalCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalCore.m; sourceTree = "<group>"; };
+		A049213313F90A290064DEE6 /* ColorUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorUtils.h; sourceTree = "<group>"; };
+		A049213413F90A290064DEE6 /* ColorUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorUtils.m; sourceTree = "<group>"; };
+		A049213513F90A290064DEE6 /* DebugUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebugUtils.h; sourceTree = "<group>"; };
+		A049213613F90A290064DEE6 /* ImageUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageUtils.h; sourceTree = "<group>"; };
+		A049213713F90A290064DEE6 /* ImageUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageUtils.m; sourceTree = "<group>"; };
+		A049213813F90A290064DEE6 /* QuartzUtils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = QuartzUtils.c; sourceTree = "<group>"; };
+		A049213913F90A290064DEE6 /* QuartzUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuartzUtils.h; sourceTree = "<group>"; };
+		A049213A13F90A290064DEE6 /* REString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REString.h; sourceTree = "<group>"; };
+		A049213B13F90A290064DEE6 /* REString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REString.m; sourceTree = "<group>"; };
+		A049213C13F90A290064DEE6 /* StringUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringUtil.h; sourceTree = "<group>"; };
+		A049213D13F90A290064DEE6 /* StringUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringUtil.m; sourceTree = "<group>"; };
+		A049213E13F90A290064DEE6 /* TimeUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeUtils.h; sourceTree = "<group>"; };
+		A049213F13F90A290064DEE6 /* TimeUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeUtils.m; sourceTree = "<group>"; };
+		A049214F13F90A3A0064DEE6 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		A049215213F90B070064DEE6 /* OALoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OALoginView.h; sourceTree = "<group>"; };
+		A049215313F90B070064DEE6 /* OALoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OALoginView.m; sourceTree = "<group>"; };
+		A049215913F90BBB0064DEE6 /* Base64Transcoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Base64Transcoder.c; sourceTree = "<group>"; };
+		A049215A13F90BBB0064DEE6 /* Base64Transcoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64Transcoder.h; sourceTree = "<group>"; };
+		A049215B13F90BBB0064DEE6 /* NSMutableURLRequest+Parameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableURLRequest+Parameters.h"; sourceTree = "<group>"; };
+		A049215C13F90BBB0064DEE6 /* NSMutableURLRequest+Parameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableURLRequest+Parameters.m"; sourceTree = "<group>"; };
+		A049215D13F90BBB0064DEE6 /* NSString+URLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEncoding.h"; sourceTree = "<group>"; };
+		A049215E13F90BBB0064DEE6 /* NSString+URLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEncoding.m"; sourceTree = "<group>"; };
+		A049215F13F90BBB0064DEE6 /* NSURL+Base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+Base.h"; sourceTree = "<group>"; };
+		A049216013F90BBB0064DEE6 /* NSURL+Base.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Base.m"; sourceTree = "<group>"; };
+		A049216113F90BBB0064DEE6 /* OAAsynchronousDataFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAAsynchronousDataFetcher.h; sourceTree = "<group>"; };
+		A049216213F90BBB0064DEE6 /* OAAsynchronousDataFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAAsynchronousDataFetcher.m; sourceTree = "<group>"; };
+		A049216313F90BBB0064DEE6 /* OAConsumer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAConsumer.h; sourceTree = "<group>"; };
+		A049216413F90BBB0064DEE6 /* OAConsumer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAConsumer.m; sourceTree = "<group>"; };
+		A049216513F90BBB0064DEE6 /* OADataFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OADataFetcher.h; sourceTree = "<group>"; };
+		A049216613F90BBB0064DEE6 /* OADataFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OADataFetcher.m; sourceTree = "<group>"; };
+		A049216713F90BBB0064DEE6 /* OAHMAC_SHA1SignatureProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAHMAC_SHA1SignatureProvider.h; sourceTree = "<group>"; };
+		A049216813F90BBB0064DEE6 /* OAHMAC_SHA1SignatureProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAHMAC_SHA1SignatureProvider.m; sourceTree = "<group>"; };
+		A049216913F90BBB0064DEE6 /* OAMutableURLRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAMutableURLRequest.h; sourceTree = "<group>"; };
+		A049216A13F90BBB0064DEE6 /* OAMutableURLRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAMutableURLRequest.m; sourceTree = "<group>"; };
+		A049216B13F90BBB0064DEE6 /* OAPlaintextSignatureProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAPlaintextSignatureProvider.h; sourceTree = "<group>"; };
+		A049216C13F90BBB0064DEE6 /* OAPlaintextSignatureProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAPlaintextSignatureProvider.m; sourceTree = "<group>"; };
+		A049216D13F90BBB0064DEE6 /* OARequestParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OARequestParameter.h; sourceTree = "<group>"; };
+		A049216E13F90BBB0064DEE6 /* OARequestParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OARequestParameter.m; sourceTree = "<group>"; };
+		A049216F13F90BBB0064DEE6 /* OAServiceTicket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAServiceTicket.h; sourceTree = "<group>"; };
+		A049217013F90BBB0064DEE6 /* OAServiceTicket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAServiceTicket.m; sourceTree = "<group>"; };
+		A049217113F90BBB0064DEE6 /* OASignatureProviding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OASignatureProviding.h; sourceTree = "<group>"; };
+		A049217213F90BBB0064DEE6 /* OAToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAToken.h; sourceTree = "<group>"; };
+		A049217313F90BBB0064DEE6 /* OAToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAToken.m; sourceTree = "<group>"; };
+		A049217613F90BBB0064DEE6 /* OAuthConsumer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuthConsumer.h; sourceTree = "<group>"; };
+		A049217713F90BBB0064DEE6 /* OAuthEngine_Weibo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuthEngine_Weibo.h; sourceTree = "<group>"; };
+		A049217813F90BBB0064DEE6 /* OAuthEngine_Weibo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAuthEngine_Weibo.m; sourceTree = "<group>"; };
+		A049217913F90BBB0064DEE6 /* OAuthController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuthController.h; sourceTree = "<group>"; };
+		A049217A13F90BBB0064DEE6 /* OAuthController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAuthController.m; sourceTree = "<group>"; };
+		A049217B13F90BBB0064DEE6 /* OAuthEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuthEngine.h; sourceTree = "<group>"; };
+		A049217C13F90BBB0064DEE6 /* OAuthEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAuthEngine.m; sourceTree = "<group>"; };
+		A049217D13F90BBB0064DEE6 /* URLConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLConnection.h; sourceTree = "<group>"; };
+		A049217E13F90BBB0064DEE6 /* URLConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLConnection.m; sourceTree = "<group>"; };
+		A049217F13F90BBB0064DEE6 /* WeiboClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboClient.h; sourceTree = "<group>"; };
+		A049218013F90BBB0064DEE6 /* WeiboClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeiboClient.m; sourceTree = "<group>"; };
+		A04921D013F90C300064DEE6 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		A04921D113F90C300064DEE6 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A049206B13F9091E0064DEE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A049215013F90A3A0064DEE6 /* Security.framework in Frameworks */,
+				A04920FD13F909EB0064DEE6 /* UIKit.framework in Frameworks */,
+				A049207213F9091E0064DEE6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A049206313F9091E0064DEE6 = {
+			isa = PBXGroup;
+			children = (
+				A049207313F9091E0064DEE6 /* weibo */,
+				A049207013F9091E0064DEE6 /* Frameworks */,
+				A049206F13F9091E0064DEE6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A049206F13F9091E0064DEE6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A049206E13F9091E0064DEE6 /* libweibo.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A049207013F9091E0064DEE6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A049214F13F90A3A0064DEE6 /* Security.framework */,
+				A04920FC13F909EB0064DEE6 /* UIKit.framework */,
+				A049207113F9091E0064DEE6 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A049207313F9091E0064DEE6 /* weibo */ = {
+			isa = PBXGroup;
+			children = (
+				A049212F13F90A290064DEE6 /* Global */,
+				A049215113F90B070064DEE6 /* Views */,
+				A049215613F90BBB0064DEE6 /* WeiboEngine */,
+				A04920FE13F90A010064DEE6 /* Additions */,
+				A049208513F909A10064DEE6 /* Models */,
+				A049207413F9091E0064DEE6 /* Supporting Files */,
+			);
+			path = weibo;
+			sourceTree = "<group>";
+		};
+		A049207413F9091E0064DEE6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A04921AA13F90C300064DEE6 /* JSONKit */,
+				A049207513F9091E0064DEE6 /* weibo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A049208513F909A10064DEE6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A049208613F909A10064DEE6 /* Comment.h */,
+				A049208713F909A10064DEE6 /* Comment.m */,
+				A049208813F909A10064DEE6 /* DB */,
+				A049208D13F909A10064DEE6 /* DirectMessage.h */,
+				A049208E13F909A10064DEE6 /* DirectMessage.m */,
+				A049208F13F909A10064DEE6 /* Draft.h */,
+				A049209013F909A10064DEE6 /* Draft.m */,
+				A049209113F909A10064DEE6 /* DummyGapStatus.h */,
+				A049209213F909A10064DEE6 /* DummyGapStatus.m */,
+				A049209313F909A10064DEE6 /* Status.h */,
+				A049209413F909A10064DEE6 /* Status.m */,
+				A049209513F909A10064DEE6 /* User.h */,
+				A049209613F909A10064DEE6 /* User.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A049208813F909A10064DEE6 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				A049208913F909A10064DEE6 /* DBConnection.h */,
+				A049208A13F909A10064DEE6 /* DBConnection.m */,
+				A049208B13F909A10064DEE6 /* Statement.h */,
+				A049208C13F909A10064DEE6 /* Statement.m */,
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
+		A04920FE13F90A010064DEE6 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				A049210113F90A010064DEE6 /* NSDataAdditions.h */,
+				A049210213F90A010064DEE6 /* NSDataAdditions.m */,
+				A049210313F90A010064DEE6 /* NSDictionaryAdditions.h */,
+				A049210413F90A010064DEE6 /* NSDictionaryAdditions.m */,
+				A049210513F90A010064DEE6 /* NSStringAdditions.h */,
+				A049210613F90A010064DEE6 /* NSStringAdditions.m */,
+			);
+			path = Additions;
+			sourceTree = "<group>";
+		};
+		A049212F13F90A290064DEE6 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				A049213013F90A290064DEE6 /* GlobalCore.h */,
+				A049213113F90A290064DEE6 /* GlobalCore.m */,
+				A049213213F90A290064DEE6 /* Utils */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		A049213213F90A290064DEE6 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A049213313F90A290064DEE6 /* ColorUtils.h */,
+				A049213413F90A290064DEE6 /* ColorUtils.m */,
+				A049213513F90A290064DEE6 /* DebugUtils.h */,
+				A049213613F90A290064DEE6 /* ImageUtils.h */,
+				A049213713F90A290064DEE6 /* ImageUtils.m */,
+				A049213813F90A290064DEE6 /* QuartzUtils.c */,
+				A049213913F90A290064DEE6 /* QuartzUtils.h */,
+				A049213A13F90A290064DEE6 /* REString.h */,
+				A049213B13F90A290064DEE6 /* REString.m */,
+				A049213C13F90A290064DEE6 /* StringUtil.h */,
+				A049213D13F90A290064DEE6 /* StringUtil.m */,
+				A049213E13F90A290064DEE6 /* TimeUtils.h */,
+				A049213F13F90A290064DEE6 /* TimeUtils.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A049215113F90B070064DEE6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A049215213F90B070064DEE6 /* OALoginView.h */,
+				A049215313F90B070064DEE6 /* OALoginView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A049215613F90BBB0064DEE6 /* WeiboEngine */ = {
+			isa = PBXGroup;
+			children = (
+				A049215813F90BBB0064DEE6 /* OAuthConsumer */,
+				A049217913F90BBB0064DEE6 /* OAuthController.h */,
+				A049217A13F90BBB0064DEE6 /* OAuthController.m */,
+				A049217B13F90BBB0064DEE6 /* OAuthEngine.h */,
+				A049217C13F90BBB0064DEE6 /* OAuthEngine.m */,
+				A049217D13F90BBB0064DEE6 /* URLConnection.h */,
+				A049217E13F90BBB0064DEE6 /* URLConnection.m */,
+				A049217F13F90BBB0064DEE6 /* WeiboClient.h */,
+				A049218013F90BBB0064DEE6 /* WeiboClient.m */,
+			);
+			path = WeiboEngine;
+			sourceTree = "<group>";
+		};
+		A049215813F90BBB0064DEE6 /* OAuthConsumer */ = {
+			isa = PBXGroup;
+			children = (
+				A049215913F90BBB0064DEE6 /* Base64Transcoder.c */,
+				A049215A13F90BBB0064DEE6 /* Base64Transcoder.h */,
+				A049215B13F90BBB0064DEE6 /* NSMutableURLRequest+Parameters.h */,
+				A049215C13F90BBB0064DEE6 /* NSMutableURLRequest+Parameters.m */,
+				A049215D13F90BBB0064DEE6 /* NSString+URLEncoding.h */,
+				A049215E13F90BBB0064DEE6 /* NSString+URLEncoding.m */,
+				A049215F13F90BBB0064DEE6 /* NSURL+Base.h */,
+				A049216013F90BBB0064DEE6 /* NSURL+Base.m */,
+				A049216113F90BBB0064DEE6 /* OAAsynchronousDataFetcher.h */,
+				A049216213F90BBB0064DEE6 /* OAAsynchronousDataFetcher.m */,
+				A049216313F90BBB0064DEE6 /* OAConsumer.h */,
+				A049216413F90BBB0064DEE6 /* OAConsumer.m */,
+				A049216513F90BBB0064DEE6 /* OADataFetcher.h */,
+				A049216613F90BBB0064DEE6 /* OADataFetcher.m */,
+				A049216713F90BBB0064DEE6 /* OAHMAC_SHA1SignatureProvider.h */,
+				A049216813F90BBB0064DEE6 /* OAHMAC_SHA1SignatureProvider.m */,
+				A049216913F90BBB0064DEE6 /* OAMutableURLRequest.h */,
+				A049216A13F90BBB0064DEE6 /* OAMutableURLRequest.m */,
+				A049216B13F90BBB0064DEE6 /* OAPlaintextSignatureProvider.h */,
+				A049216C13F90BBB0064DEE6 /* OAPlaintextSignatureProvider.m */,
+				A049216D13F90BBB0064DEE6 /* OARequestParameter.h */,
+				A049216E13F90BBB0064DEE6 /* OARequestParameter.m */,
+				A049216F13F90BBB0064DEE6 /* OAServiceTicket.h */,
+				A049217013F90BBB0064DEE6 /* OAServiceTicket.m */,
+				A049217113F90BBB0064DEE6 /* OASignatureProviding.h */,
+				A049217213F90BBB0064DEE6 /* OAToken.h */,
+				A049217313F90BBB0064DEE6 /* OAToken.m */,
+				A049217613F90BBB0064DEE6 /* OAuthConsumer.h */,
+				A049217713F90BBB0064DEE6 /* OAuthEngine_Weibo.h */,
+				A049217813F90BBB0064DEE6 /* OAuthEngine_Weibo.m */,
+			);
+			path = OAuthConsumer;
+			sourceTree = "<group>";
+		};
+		A04921AA13F90C300064DEE6 /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				A04921D013F90C300064DEE6 /* JSONKit.h */,
+				A04921D113F90C300064DEE6 /* JSONKit.m */,
+			);
+			path = JSONKit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A049206C13F9091E0064DEE6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A04921A813F90BBC0064DEE6 /* WeiboClient.h in Headers */,
+				A04921A213F90BBC0064DEE6 /* OAuthController.h in Headers */,
+				A04920A313F909A10064DEE6 /* Status.h in Headers */,
+				A049209713F909A10064DEE6 /* Comment.h in Headers */,
+				A049209B13F909A10064DEE6 /* Statement.h in Headers */,
+				A04920A513F909A10064DEE6 /* User.h in Headers */,
+				A049209F13F909A10064DEE6 /* Draft.h in Headers */,
+				A04921A613F90BBC0064DEE6 /* URLConnection.h in Headers */,
+				A049219B13F90BBC0064DEE6 /* OAToken.h in Headers */,
+				A049218A13F90BBC0064DEE6 /* OAAsynchronousDataFetcher.h in Headers */,
+				A049218C13F90BBC0064DEE6 /* OAConsumer.h in Headers */,
+				A049218E13F90BBC0064DEE6 /* OADataFetcher.h in Headers */,
+				A049219013F90BBC0064DEE6 /* OAHMAC_SHA1SignatureProvider.h in Headers */,
+				A049219213F90BBC0064DEE6 /* OAMutableURLRequest.h in Headers */,
+				A049219413F90BBC0064DEE6 /* OAPlaintextSignatureProvider.h in Headers */,
+				A049219613F90BBC0064DEE6 /* OARequestParameter.h in Headers */,
+				A049219813F90BBC0064DEE6 /* OAServiceTicket.h in Headers */,
+				A049219A13F90BBC0064DEE6 /* OASignatureProviding.h in Headers */,
+				A049219F13F90BBC0064DEE6 /* OAuthConsumer.h in Headers */,
+				A04921A013F90BBC0064DEE6 /* OAuthEngine_Weibo.h in Headers */,
+				A04921A413F90BBC0064DEE6 /* OAuthEngine.h in Headers */,
+				A049209913F909A10064DEE6 /* DBConnection.h in Headers */,
+				A049209D13F909A10064DEE6 /* DirectMessage.h in Headers */,
+				A04920A113F909A10064DEE6 /* DummyGapStatus.h in Headers */,
+				A049211913F90A010064DEE6 /* NSDataAdditions.h in Headers */,
+				A049211B13F90A010064DEE6 /* NSDictionaryAdditions.h in Headers */,
+				A049211D13F90A010064DEE6 /* NSStringAdditions.h in Headers */,
+				A049214013F90A290064DEE6 /* GlobalCore.h in Headers */,
+				A049214213F90A290064DEE6 /* ColorUtils.h in Headers */,
+				A049214413F90A290064DEE6 /* DebugUtils.h in Headers */,
+				A049214513F90A290064DEE6 /* ImageUtils.h in Headers */,
+				A049214813F90A290064DEE6 /* QuartzUtils.h in Headers */,
+				A049214913F90A290064DEE6 /* REString.h in Headers */,
+				A049214B13F90A290064DEE6 /* StringUtil.h in Headers */,
+				A049214D13F90A290064DEE6 /* TimeUtils.h in Headers */,
+				A049215413F90B070064DEE6 /* OALoginView.h in Headers */,
+				A049218313F90BBC0064DEE6 /* Base64Transcoder.h in Headers */,
+				A049218413F90BBC0064DEE6 /* NSMutableURLRequest+Parameters.h in Headers */,
+				A049218613F90BBC0064DEE6 /* NSString+URLEncoding.h in Headers */,
+				A049218813F90BBC0064DEE6 /* NSURL+Base.h in Headers */,
+				A04921D213F90C300064DEE6 /* JSONKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A049206D13F9091E0064DEE6 /* weibo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A049207B13F9091E0064DEE6 /* Build configuration list for PBXNativeTarget "weibo" */;
+			buildPhases = (
+				A049206A13F9091E0064DEE6 /* Sources */,
+				A049206B13F9091E0064DEE6 /* Frameworks */,
+				A049206C13F9091E0064DEE6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = weibo;
+			productName = weibo;
+			productReference = A049206E13F9091E0064DEE6 /* libweibo.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A049206513F9091E0064DEE6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = stcui;
+			};
+			buildConfigurationList = A049206813F9091E0064DEE6 /* Build configuration list for PBXProject "weibo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A049206313F9091E0064DEE6;
+			productRefGroup = A049206F13F9091E0064DEE6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A049206D13F9091E0064DEE6 /* weibo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A049206A13F9091E0064DEE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A049209813F909A10064DEE6 /* Comment.m in Sources */,
+				A049209A13F909A10064DEE6 /* DBConnection.m in Sources */,
+				A049209C13F909A10064DEE6 /* Statement.m in Sources */,
+				A049209E13F909A10064DEE6 /* DirectMessage.m in Sources */,
+				A04920A013F909A10064DEE6 /* Draft.m in Sources */,
+				A04920A213F909A10064DEE6 /* DummyGapStatus.m in Sources */,
+				A04920A413F909A10064DEE6 /* Status.m in Sources */,
+				A04920A613F909A10064DEE6 /* User.m in Sources */,
+				A049211A13F90A010064DEE6 /* NSDataAdditions.m in Sources */,
+				A049214113F90A290064DEE6 /* GlobalCore.m in Sources */,
+				A049214313F90A290064DEE6 /* ColorUtils.m in Sources */,
+				A049214613F90A290064DEE6 /* ImageUtils.m in Sources */,
+				A049214713F90A290064DEE6 /* QuartzUtils.c in Sources */,
+				A049214A13F90A290064DEE6 /* REString.m in Sources */,
+				A049214C13F90A290064DEE6 /* StringUtil.m in Sources */,
+				A049214E13F90A290064DEE6 /* TimeUtils.m in Sources */,
+				A049215513F90B070064DEE6 /* OALoginView.m in Sources */,
+				A049218213F90BBB0064DEE6 /* Base64Transcoder.c in Sources */,
+				A049218513F90BBC0064DEE6 /* NSMutableURLRequest+Parameters.m in Sources */,
+				A049218713F90BBC0064DEE6 /* NSString+URLEncoding.m in Sources */,
+				A049218913F90BBC0064DEE6 /* NSURL+Base.m in Sources */,
+				A049218B13F90BBC0064DEE6 /* OAAsynchronousDataFetcher.m in Sources */,
+				A049218D13F90BBC0064DEE6 /* OAConsumer.m in Sources */,
+				A049218F13F90BBC0064DEE6 /* OADataFetcher.m in Sources */,
+				A049219113F90BBC0064DEE6 /* OAHMAC_SHA1SignatureProvider.m in Sources */,
+				A049219313F90BBC0064DEE6 /* OAMutableURLRequest.m in Sources */,
+				A049219513F90BBC0064DEE6 /* OAPlaintextSignatureProvider.m in Sources */,
+				A049219713F90BBC0064DEE6 /* OARequestParameter.m in Sources */,
+				A049219913F90BBC0064DEE6 /* OAServiceTicket.m in Sources */,
+				A049219C13F90BBC0064DEE6 /* OAToken.m in Sources */,
+				A04921A113F90BBC0064DEE6 /* OAuthEngine_Weibo.m in Sources */,
+				A04921A313F90BBC0064DEE6 /* OAuthController.m in Sources */,
+				A04921A513F90BBC0064DEE6 /* OAuthEngine.m in Sources */,
+				A04921A713F90BBC0064DEE6 /* URLConnection.m in Sources */,
+				A04921A913F90BBC0064DEE6 /* WeiboClient.m in Sources */,
+				A04921D313F90C300064DEE6 /* JSONKit.m in Sources */,
+				A04921D813F90E4E0064DEE6 /* NSDictionaryAdditions.m in Sources */,
+				A04921D913F90E700064DEE6 /* NSStringAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A049207913F9091E0064DEE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A049207A13F9091E0064DEE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A049207C13F9091E0064DEE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/weibo.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "weibo/weibo-Prefix.pch";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../SinaWeiboOAuthDemo/Classes/WeiboEngine\"",
+					"\"$(SRCROOT)/weibo/WeiboEngine\"",
+				);
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A049207D13F9091E0064DEE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/weibo.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "weibo/weibo-Prefix.pch";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../SinaWeiboOAuthDemo/Classes/WeiboEngine\"",
+					"\"$(SRCROOT)/weibo/WeiboEngine\"",
+				);
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A049206813F9091E0064DEE6 /* Build configuration list for PBXProject "weibo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A049207913F9091E0064DEE6 /* Debug */,
+				A049207A13F9091E0064DEE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A049207B13F9091E0064DEE6 /* Build configuration list for PBXNativeTarget "weibo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A049207C13F9091E0064DEE6 /* Debug */,
+				A049207D13F9091E0064DEE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A049206513F9091E0064DEE6 /* Project object */;
+}

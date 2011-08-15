@@ -7,13 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "OAuthController.h"
 #import "WeiboClient.h"
 #import "ComposeViewController.h"
 
 @class OAuthEngine;
 
-@interface RootViewController : UIViewController<OAuthControllerDelegate> {
+@interface RootViewController : UIViewController <OAuthControllerDelegate> {
 	OAuthEngine				*_engine;
 	WeiboClient *weiboClient;
 	NSMutableArray *statuses;

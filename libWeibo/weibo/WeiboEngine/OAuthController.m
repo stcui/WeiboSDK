@@ -13,7 +13,7 @@
 #import "OADataFetcher.h"
 #import "OAMutableURLRequest.h"
 #import "OAuthEngine_Weibo.h"
-#import "JSON.h"
+#import "JSONKit.h"
 
 #define kSpinnerTag 1010
 
@@ -184,7 +184,7 @@
 #pragma mark - OADataFetcher Delegate
 - (void) setAccessToken: (OAServiceTicket *) ticket withData: (NSData *) data {
     NSString *result = [NSString stringWithCString:[data bytes] encoding:NSUTF8StringEncoding];
-    NSDictionary *response = [result JSONValue];
+    NSDictionary *response = [result objectFromJSONString];
     
     NSString *localizedErrorReason = nil;
     if ([response valueForKey:@"error"]) {

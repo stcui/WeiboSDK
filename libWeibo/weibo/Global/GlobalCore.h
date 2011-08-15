@@ -37,14 +37,14 @@
  *
  * Typically used with arrays of delegates.
  */
-NSMutableArray* CreateNonRetainingArray();
+NSMutableArray* CreateNonRetainingArray(void);
 
 /**
  * Creates a mutable dictionary which does not retain references to the values it contains.
  *
  * Typically used with dictionaries of delegates.
  */
-NSMutableDictionary* CreateNonRetainingDictionary();
+NSMutableDictionary* CreateNonRetainingDictionary(void);
 
 
 /**
