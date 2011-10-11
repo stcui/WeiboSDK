@@ -34,8 +34,6 @@
 		A049214213F90A290064DEE6 /* ColorUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = A049213313F90A290064DEE6 /* ColorUtils.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		A049214313F90A290064DEE6 /* ColorUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A049213413F90A290064DEE6 /* ColorUtils.m */; };
 		A049214413F90A290064DEE6 /* DebugUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = A049213513F90A290064DEE6 /* DebugUtils.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		A049214513F90A290064DEE6 /* ImageUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = A049213613F90A290064DEE6 /* ImageUtils.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		A049214613F90A290064DEE6 /* ImageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A049213713F90A290064DEE6 /* ImageUtils.m */; };
 		A049214713F90A290064DEE6 /* QuartzUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = A049213813F90A290064DEE6 /* QuartzUtils.c */; };
 		A049214813F90A290064DEE6 /* QuartzUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = A049213913F90A290064DEE6 /* QuartzUtils.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		A049214913F90A290064DEE6 /* REString.h in Headers */ = {isa = PBXBuildFile; fileRef = A049213A13F90A290064DEE6 /* REString.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -123,8 +121,6 @@
 		A049213313F90A290064DEE6 /* ColorUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorUtils.h; sourceTree = "<group>"; };
 		A049213413F90A290064DEE6 /* ColorUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorUtils.m; sourceTree = "<group>"; };
 		A049213513F90A290064DEE6 /* DebugUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebugUtils.h; sourceTree = "<group>"; };
-		A049213613F90A290064DEE6 /* ImageUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageUtils.h; sourceTree = "<group>"; };
-		A049213713F90A290064DEE6 /* ImageUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageUtils.m; sourceTree = "<group>"; };
 		A049213813F90A290064DEE6 /* QuartzUtils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = QuartzUtils.c; sourceTree = "<group>"; };
 		A049213913F90A290064DEE6 /* QuartzUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuartzUtils.h; sourceTree = "<group>"; };
 		A049213A13F90A290064DEE6 /* REString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REString.h; sourceTree = "<group>"; };
@@ -301,8 +297,6 @@
 				A049213313F90A290064DEE6 /* ColorUtils.h */,
 				A049213413F90A290064DEE6 /* ColorUtils.m */,
 				A049213513F90A290064DEE6 /* DebugUtils.h */,
-				A049213613F90A290064DEE6 /* ImageUtils.h */,
-				A049213713F90A290064DEE6 /* ImageUtils.m */,
 				A049213813F90A290064DEE6 /* QuartzUtils.c */,
 				A049213913F90A290064DEE6 /* QuartzUtils.h */,
 				A049213A13F90A290064DEE6 /* REString.h */,
@@ -423,7 +417,6 @@
 				A049214013F90A290064DEE6 /* GlobalCore.h in Headers */,
 				A049214213F90A290064DEE6 /* ColorUtils.h in Headers */,
 				A049214413F90A290064DEE6 /* DebugUtils.h in Headers */,
-				A049214513F90A290064DEE6 /* ImageUtils.h in Headers */,
 				A049214813F90A290064DEE6 /* QuartzUtils.h in Headers */,
 				A049214913F90A290064DEE6 /* REString.h in Headers */,
 				A049214B13F90A290064DEE6 /* StringUtil.h in Headers */,
@@ -498,7 +491,6 @@
 				A049211A13F90A010064DEE6 /* NSDataAdditions.m in Sources */,
 				A049214113F90A290064DEE6 /* GlobalCore.m in Sources */,
 				A049214313F90A290064DEE6 /* ColorUtils.m in Sources */,
-				A049214613F90A290064DEE6 /* ImageUtils.m in Sources */,
 				A049214713F90A290064DEE6 /* QuartzUtils.c in Sources */,
 				A049214A13F90A290064DEE6 /* REString.m in Sources */,
 				A049214C13F90A290064DEE6 /* StringUtil.m in Sources */,
@@ -582,7 +574,7 @@
 					"\"$(SRCROOT)/../SinaWeiboOAuthDemo/Classes/WeiboEngine\"",
 					"\"$(SRCROOT)/weibo/WeiboEngine\"",
 				);
-				OTHER_LDFLAGS = "-all_load";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -599,7 +591,7 @@
 					"\"$(SRCROOT)/../SinaWeiboOAuthDemo/Classes/WeiboEngine\"",
 					"\"$(SRCROOT)/weibo/WeiboEngine\"",
 				);
-				OTHER_LDFLAGS = "-all_load";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};

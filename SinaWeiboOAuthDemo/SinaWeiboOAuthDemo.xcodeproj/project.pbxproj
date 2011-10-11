@@ -385,7 +385,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/Classes/WeiboEngine\"",
 				);
-				OTHER_LDFLAGS = "-all_load";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = SinaWeiboOAuthDemo;
 			};
 			name = Debug;
@@ -404,7 +404,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/Classes/WeiboEngine\"",
 				);
-				OTHER_LDFLAGS = "-all_load";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = SinaWeiboOAuthDemo;
 				VALIDATE_PRODUCT = YES;
 			};
